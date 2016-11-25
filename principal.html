@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var palabras_espanya= new Array("Facebook","Tuenti","Youtube","Hotmail","Google","Blick");
+		var palabras_suiza= new Array("Facebook","Tuenti","Youtube","Hotmail","Google","Blick");
+		var palabras_portugal= new Array("Facebook","Tuenti","Youtube","Hotmail","Google","Blick");
+
+		var palabras_busqueda=new Array(palabras_espanya, palabras_suiza, palabras_portugal);
+
+		document.write("<table border='1'>")
+		for (var i = 0; i < palabras_busqueda.length; i++) {
+			document.write("<tr>")
+			for (var j = 0; j < palabras_busqueda[i].length; j++) {
+				document.write("<td>" + palabras_busqueda[i][j] + "</td>");
+			}
+			document.write("</tr>")
+			document.write("<br>");
+		}
+		document.write("</table>")
+	</script>
+</body>
+</html>
